@@ -22,11 +22,11 @@ contract MPY {
     mapping (address => uint256) balances;
     mapping (address => mapping (address => uint256)) allowed;
 
-    uint256 public constant tokenExchangeRate = 20; // 1 MPY per 0.05 ETH
-    uint256 public maxCap = 50 * (10**3) * (10**decimals); // Maximum part for offering
+    uint256 public constant tokenExchangeRate = 10; // 1 MPY per 0.1 ETH
+    uint256 public maxCap = 30 * (10**3) * (10**decimals); // Maximum part for offering
     uint256 public totalSupply; // Total part for offering
-    uint256 public minCap = 16 * (10**2) * (10**decimals); // Minimum part for offering
-    uint256 public ownerTokens = 4 * (10**2) * (10**decimals);
+    uint256 public minCap = 10 * (10**2) * (10**decimals); // Minimum part for offering
+    uint256 public ownerTokens = 3 * (10**2) * (10**decimals);
 
     bool public isFinalized = false;
 
